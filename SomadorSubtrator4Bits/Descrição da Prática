@@ -1,0 +1,11 @@
+LAB01 - Somador/Subtrator (complemento de dois) de 2 palavras de 4 bits
+Entrada: SW3-SW0 equivalente à A3, A2, A1, A0
+				 SW9-SW6 equivalente à B3, B2, B1, B0
+         SW4 -> define se é soma ou subtração - FEITO
+
+Saída modelo 2: Primeiro display recebe a palavra A
+                Segundo display recebe a palavra B
+                Últimos dois displays recebem o resultado - FAZER NA AULA QUE VEM
+
+Saída modelo 1: Resultado em LEDs
+    L4, L3, L2, L1, L0 - FAZER NA AULA QUE VEM

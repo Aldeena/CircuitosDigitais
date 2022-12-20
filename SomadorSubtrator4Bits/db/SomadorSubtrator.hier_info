@@ -1,0 +1,457 @@
+|SomadorSubtrator
+S0 <= SomadorCompleto:inst.S
+A0 => SomadorCompleto:inst.A
+A0 => ConversorHexaDecimal:inst8.D
+Controlador => inst4.IN0
+Controlador => SomadorCompleto:inst.CI
+Controlador => inst5.IN0
+Controlador => inst6.IN0
+Controlador => inst7.IN0
+B0 => inst4.IN1
+B0 => ConversorHexaDecimal:inst9.D
+S1 <= SomadorCompleto:inst2.S
+A1 => SomadorCompleto:inst2.A
+A1 => ConversorHexaDecimal:inst8.C
+B1 => inst5.IN1
+B1 => ConversorHexaDecimal:inst9.C
+S2 <= SomadorCompleto:inst1.S
+A2 => SomadorCompleto:inst1.A
+A2 => ConversorHexaDecimal:inst8.B
+B2 => inst6.IN1
+B2 => ConversorHexaDecimal:inst9.B
+S3 <= SomadorCompleto:inst3.S
+A3 => SomadorCompleto:inst3.A
+A3 => ConversorHexaDecimal:inst8.A
+B3 => inst7.IN1
+B3 => ConversorHexaDecimal:inst9.A
+COUT <= SomadorCompleto:inst3.CO
+h0a <= ConversorHexaDecimal:inst8.h0
+h0b <= ConversorHexaDecimal:inst8.h1
+h0c <= ConversorHexaDecimal:inst8.h2
+h0d <= ConversorHexaDecimal:inst8.h3
+h0e <= ConversorHexaDecimal:inst8.h4
+h0f <= ConversorHexaDecimal:inst8.h5
+h0g <= ConversorHexaDecimal:inst8.h6
+h2a <= ConversorHexaDecimal:inst9.h0
+h2b <= ConversorHexaDecimal:inst9.h1
+h2c <= ConversorHexaDecimal:inst9.h2
+h2d <= ConversorHexaDecimal:inst9.h3
+h2e <= ConversorHexaDecimal:inst9.h4
+h2f <= ConversorHexaDecimal:inst9.h5
+h2g <= ConversorHexaDecimal:inst9.h6
+h4a <= ConversorHexaDecimal:inst10.h0
+h4b <= ConversorHexaDecimal:inst10.h1
+h4c <= ConversorHexaDecimal:inst10.h2
+h4d <= ConversorHexaDecimal:inst10.h3
+h4e <= ConversorHexaDecimal:inst10.h4
+h4f <= ConversorHexaDecimal:inst10.h5
+h4g <= ConversorHexaDecimal:inst10.h6
+h5a <= ConversorHexaDecimal:inst11.h0
+h5b <= ConversorHexaDecimal:inst11.h1
+h5c <= ConversorHexaDecimal:inst11.h2
+h5d <= ConversorHexaDecimal:inst11.h3
+h5e <= ConversorHexaDecimal:inst11.h4
+h5f <= ConversorHexaDecimal:inst11.h5
+h5g <= ConversorHexaDecimal:inst11.h6
+
+
+|SomadorSubtrator|SomadorCompleto:inst
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|SomadorSubtrator|SomadorCompleto:inst|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst2
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|SomadorSubtrator|SomadorCompleto:inst2|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst2|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst2|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst2|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst2|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst2|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst1
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|SomadorSubtrator|SomadorCompleto:inst1|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst1|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst1|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst1|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst1|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst1|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst3
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|SomadorSubtrator|SomadorCompleto:inst3|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst3|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst3|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst3|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst3|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|SomadorCompleto:inst3|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|SomadorSubtrator|ConversorHexaDecimal:inst8
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorSubtrator|ConversorHexaDecimal:inst9
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorSubtrator|ConversorHexaDecimal:inst10
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorSubtrator|ConversorHexaDecimal:inst11
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
