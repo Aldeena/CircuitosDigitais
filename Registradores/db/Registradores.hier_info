@@ -1,0 +1,810 @@
+|Registradores
+HEX0a <= ConversorHexaDecimal:inst6.h0
+Preset => Registrador4BitsPIPO:inst34.Preset
+Preset => Registrador4BitsPIPO:inst.Preset
+Preset => Registrador4BitsPIPO:inst1.Preset
+Preset => Registrador4BitsPIPO:inst2.Preset
+Preset => Registrador4BitsPIPO:inst3.Preset
+Preset => Registrador4BitsPIPO:inst4.Preset
+A0 => Registrador4BitsPIPO:inst34.D0
+A1 => Registrador4BitsPIPO:inst34.D1
+A2 => Registrador4BitsPIPO:inst34.D2
+A3 => Registrador4BitsPIPO:inst34.D3
+Clock => inst20.IN0
+Clear => Registrador4BitsPIPO:inst34.Clear
+Clear => Registrador4BitsPIPO:inst.Clear
+Clear => Registrador4BitsPIPO:inst1.Clear
+Clear => Registrador4BitsPIPO:inst2.Clear
+Clear => Registrador4BitsPIPO:inst3.Clear
+Clear => Registrador4BitsPIPO:inst4.Clear
+HEX0b <= ConversorHexaDecimal:inst6.h1
+HEX0c <= ConversorHexaDecimal:inst6.h2
+HEX0d <= ConversorHexaDecimal:inst6.h3
+HEX0e <= ConversorHexaDecimal:inst6.h4
+HEX0f <= ConversorHexaDecimal:inst6.h5
+HEX0g <= ConversorHexaDecimal:inst6.h6
+HEX1a <= ConversorHexaDecimal:inst7.h0
+HEX1b <= ConversorHexaDecimal:inst7.h1
+HEX1c <= ConversorHexaDecimal:inst7.h2
+HEX1d <= ConversorHexaDecimal:inst7.h3
+HEX1e <= ConversorHexaDecimal:inst7.h4
+HEX1f <= ConversorHexaDecimal:inst7.h5
+HEX1g <= ConversorHexaDecimal:inst7.h6
+HEX2a <= ConversorHexaDecimal:inst9.h0
+HEX2b <= ConversorHexaDecimal:inst9.h1
+HEX2c <= ConversorHexaDecimal:inst9.h2
+HEX2d <= ConversorHexaDecimal:inst9.h3
+HEX2e <= ConversorHexaDecimal:inst9.h4
+HEX2f <= ConversorHexaDecimal:inst9.h5
+HEX2g <= ConversorHexaDecimal:inst9.h6
+HEX3a <= ConversorHexaDecimal:inst8.h0
+HEX3b <= ConversorHexaDecimal:inst8.h1
+HEX3c <= ConversorHexaDecimal:inst8.h2
+HEX3d <= ConversorHexaDecimal:inst8.h3
+HEX3e <= ConversorHexaDecimal:inst8.h4
+HEX3f <= ConversorHexaDecimal:inst8.h5
+HEX3g <= ConversorHexaDecimal:inst8.h6
+HEX4a <= ConversorHexaDecimal:inst10.h0
+Botao => inst5.IN0
+Controlador => inst16.IN0
+Controlador => SomadorCompleto:inst12.CI
+Controlador => inst19.IN0
+Controlador => inst18.IN0
+Controlador => inst17.IN0
+HEX4b <= ConversorHexaDecimal:inst10.h1
+HEX4c <= ConversorHexaDecimal:inst10.h2
+HEX4d <= ConversorHexaDecimal:inst10.h3
+HEX4e <= ConversorHexaDecimal:inst10.h4
+HEX4f <= ConversorHexaDecimal:inst10.h5
+HEX4g <= ConversorHexaDecimal:inst10.h6
+HEX5a <= ConversorHexaDecimal:inst11.h0
+HEX5b <= ConversorHexaDecimal:inst11.h1
+HEX5c <= ConversorHexaDecimal:inst11.h2
+HEX5d <= ConversorHexaDecimal:inst11.h3
+HEX5e <= ConversorHexaDecimal:inst11.h4
+HEX5f <= ConversorHexaDecimal:inst11.h5
+HEX5g <= ConversorHexaDecimal:inst11.h6
+
+
+|Registradores|ConversorHexaDecimal:inst6
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registradores|Registrador4BitsPIPO:inst34
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+Clock => inst3.CLK
+D0 => inst.DATAIN
+Preset => inst.PRESET
+Preset => inst1.PRESET
+Preset => inst2.PRESET
+Preset => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.DATAIN
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst2.DATAIN
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst3.DATAIN
+
+
+|Registradores|ConversorHexaDecimal:inst7
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registradores|Registrador4BitsPIPO:inst
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+Clock => inst3.CLK
+D0 => inst.DATAIN
+Preset => inst.PRESET
+Preset => inst1.PRESET
+Preset => inst2.PRESET
+Preset => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.DATAIN
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst2.DATAIN
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst3.DATAIN
+
+
+|Registradores|ConversorHexaDecimal:inst9
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registradores|Registrador4BitsPIPO:inst1
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+Clock => inst3.CLK
+D0 => inst.DATAIN
+Preset => inst.PRESET
+Preset => inst1.PRESET
+Preset => inst2.PRESET
+Preset => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.DATAIN
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst2.DATAIN
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst3.DATAIN
+
+
+|Registradores|ConversorHexaDecimal:inst8
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registradores|Registrador4BitsPIPO:inst2
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+Clock => inst3.CLK
+D0 => inst.DATAIN
+Preset => inst.PRESET
+Preset => inst1.PRESET
+Preset => inst2.PRESET
+Preset => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.DATAIN
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst2.DATAIN
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst3.DATAIN
+
+
+|Registradores|ConversorHexaDecimal:inst10
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registradores|Registrador4BitsPIPO:inst3
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+Clock => inst3.CLK
+D0 => inst.DATAIN
+Preset => inst.PRESET
+Preset => inst1.PRESET
+Preset => inst2.PRESET
+Preset => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.DATAIN
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst2.DATAIN
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst3.DATAIN
+
+
+|Registradores|Controlador4Bits:inst36
+Z0 <= Controlador2Portas:inst.S
+X0 => Controlador2Portas:inst.X
+B0 => Controlador2Portas:inst.Controle
+S0 => Controlador2Portas:inst.Y
+Z1 <= Controlador2Portas:inst1.S
+X1 => Controlador2Portas:inst1.X
+B1 => Controlador2Portas:inst1.Controle
+S1 => Controlador2Portas:inst1.Y
+Z2 <= Controlador2Portas:inst2.S
+X2 => Controlador2Portas:inst2.X
+B2 => Controlador2Portas:inst2.Controle
+S2 => Controlador2Portas:inst2.Y
+Z3 <= Controlador2Portas:inst3.S
+X3 => Controlador2Portas:inst3.X
+B3 => Controlador2Portas:inst3.Controle
+S3 => Controlador2Portas:inst3.Y
+
+
+|Registradores|Controlador4Bits:inst36|Controlador2Portas:inst
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst1.IN0
+Controle => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Registradores|Controlador4Bits:inst36|Controlador2Portas:inst1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst1.IN0
+Controle => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Registradores|Controlador4Bits:inst36|Controlador2Portas:inst2
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst1.IN0
+Controle => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Registradores|Controlador4Bits:inst36|Controlador2Portas:inst3
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst1.IN0
+Controle => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Registradores|SomadorCompleto:inst12
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|Registradores|SomadorCompleto:inst12|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst12|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst12|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst12|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst12|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst12|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst13
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|Registradores|SomadorCompleto:inst13|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst13|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst13|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst13|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst13|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst13|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst14
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|Registradores|SomadorCompleto:inst14|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst14|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst14|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst14|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst14|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst14|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst15
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|Registradores|SomadorCompleto:inst15|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst15|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst15|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst15|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst15|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|SomadorCompleto:inst15|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Registradores|ConversorHexaDecimal:inst11
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Registradores|Registrador4BitsPIPO:inst4
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+Clock => inst3.CLK
+D0 => inst.DATAIN
+Preset => inst.PRESET
+Preset => inst1.PRESET
+Preset => inst2.PRESET
+Preset => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.DATAIN
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst2.DATAIN
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst3.DATAIN
+
+
+|Registradores|Controlador4Bits:inst37
+Z0 <= Controlador2Portas:inst.S
+X0 => Controlador2Portas:inst.X
+B0 => Controlador2Portas:inst.Controle
+S0 => Controlador2Portas:inst.Y
+Z1 <= Controlador2Portas:inst1.S
+X1 => Controlador2Portas:inst1.X
+B1 => Controlador2Portas:inst1.Controle
+S1 => Controlador2Portas:inst1.Y
+Z2 <= Controlador2Portas:inst2.S
+X2 => Controlador2Portas:inst2.X
+B2 => Controlador2Portas:inst2.Controle
+S2 => Controlador2Portas:inst2.Y
+Z3 <= Controlador2Portas:inst3.S
+X3 => Controlador2Portas:inst3.X
+B3 => Controlador2Portas:inst3.Controle
+S3 => Controlador2Portas:inst3.Y
+
+
+|Registradores|Controlador4Bits:inst37|Controlador2Portas:inst
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst1.IN0
+Controle => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Registradores|Controlador4Bits:inst37|Controlador2Portas:inst1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst1.IN0
+Controle => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Registradores|Controlador4Bits:inst37|Controlador2Portas:inst2
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst1.IN0
+Controle => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Registradores|Controlador4Bits:inst37|Controlador2Portas:inst3
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst1.IN0
+Controle => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+

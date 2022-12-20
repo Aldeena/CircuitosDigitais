@@ -1,0 +1,20 @@
+Library IEEE;
+use ieee.std_logic1164.all;
+entity 7seg is
+	port(
+		A, B, C, D: in std_logic;
+		a, b, c, d, e, f, g: out std_logic
+		);
+end 7seg
+
+architecture arc_7seg of 7seg is 
+	begin
+		a <= (not A and not B and not C and D) or (not A and B and not C and not D) or (A and not B and C and D) or (A and B and not C and D);
+		b <= (not A and B and not C and D) or (B and C and not D) or (A and C and D) or (A and B and not D);
+		c <= (not A and not B and C and not D) or (A and B and not D) or (A and B and C);
+		d <= (not A and not B and not C and D) or (not A and B and not C and not D) or (B and C and D) or (A and not B and C and not D);
+		e <= (not A and D) or (not A and B and not C) or (B and not C and D);
+		f <= (not A and not B and C) or (not A and C and D) or (not B and not C and D);
+		g <= (not A and not B and not C) or (not A and B and C and D) or (not B and not C and not D);
+	end arc_7seg;
+	

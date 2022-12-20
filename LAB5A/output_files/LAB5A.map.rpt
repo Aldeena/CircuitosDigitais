@@ -1,0 +1,441 @@
+Analysis & Synthesis report for LAB5A
+Thu Nov  3 14:49:12 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Nov  3 14:49:12 2022       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; LAB5A                                       ;
+; Top-level Entity Name              ; LAB5A                                       ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 181                                         ;
+;     Total combinational functions  ; 181                                         ;
+;     Dedicated logic registers      ; 89                                          ;
+; Total registers                    ; 89                                          ;
+; Total pins                         ; 46                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; LAB5A              ; LAB5A              ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                           ; Library ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+; ../Prova1/Seletora.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/Prova1/Seletora.bdf                    ;         ;
+; Timing_Reference.vhd                      ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Timing_Reference.vhd             ;         ;
+; ../ConversorHexa/ConversorHexadecimal.vhd ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/ConversorHexa/ConversorHexadecimal.vhd ;         ;
+; 09D3.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/09D3.bdf                         ;         ;
+; 09D2.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/09D2.bdf                         ;         ;
+; 09D1.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/09D1.bdf                         ;         ;
+; 09D0.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/09D0.bdf                         ;         ;
+; Contador09.bdf                            ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Contador09.bdf                   ;         ;
+; 06D3.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/06D3.bdf                         ;         ;
+; 06D2.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/06D2.bdf                         ;         ;
+; 06D1.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/06D1.bdf                         ;         ;
+; 06D0.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/06D0.bdf                         ;         ;
+; Contador06.bdf                            ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Contador06.bdf                   ;         ;
+; LAB5A.bdf                                 ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/LAB5A.bdf                        ;         ;
+; Frequencia.bdf                            ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Frequencia.bdf                   ;         ;
+; Timing_Reference1KHz.vhd                  ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Timing_Reference1KHz.vhd         ;         ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimated Total logic elements              ; 181                    ;
+;                                             ;                        ;
+; Total combinational functions               ; 181                    ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 78                     ;
+;     -- 3 input functions                    ; 19                     ;
+;     -- <=2 input functions                  ; 84                     ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 120                    ;
+;     -- arithmetic mode                      ; 61                     ;
+;                                             ;                        ;
+; Total registers                             ; 89                     ;
+;     -- Dedicated logic registers            ; 89                     ;
+;     -- I/O registers                        ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 46                     ;
+;                                             ;                        ;
+; Embedded Multiplier 9-bit elements          ; 0                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; InternalCLK50MHz~input ;
+; Maximum fan-out                             ; 65                     ;
+; Total fan-out                               ; 826                    ;
+; Average fan-out                             ; 2.28                   ;
++---------------------------------------------+------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                 ; Entity Name          ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+----------------------+--------------+
+; |LAB5A                             ; 181 (14)            ; 89 (1)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 46   ; 0            ; 0          ; |LAB5A                                              ; LAB5A                ; work         ;
+;    |Contador06:inst|               ; 3 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador06:inst                              ; Contador06           ; work         ;
+;       |06D0:inst|                  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador06:inst|06D0:inst                    ; 06D0                 ; work         ;
+;       |06D1:inst5|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador06:inst|06D1:inst5                   ; 06D1                 ; work         ;
+;       |06D2:inst7|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador06:inst|06D2:inst7                   ; 06D2                 ; work         ;
+;    |Contador09:inst1|              ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst1                             ; Contador09           ; work         ;
+;       |09D0:inst6|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst1|09D0:inst6                  ; 09D0                 ; work         ;
+;       |09D1:inst5|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst1|09D1:inst5                  ; 09D1                 ; work         ;
+;       |09D2:inst2|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst1|09D2:inst2                  ; 09D2                 ; work         ;
+;       |09D3:inst4|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst1|09D3:inst4                  ; 09D3                 ; work         ;
+;    |Contador09:inst2|              ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst2                             ; Contador09           ; work         ;
+;       |09D0:inst6|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst2|09D0:inst6                  ; 09D0                 ; work         ;
+;       |09D1:inst5|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst2|09D1:inst5                  ; 09D1                 ; work         ;
+;       |09D2:inst2|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst2|09D2:inst2                  ; 09D2                 ; work         ;
+;       |09D3:inst4|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst2|09D3:inst4                  ; 09D3                 ; work         ;
+;    |Contador09:inst3|              ; 5 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst3                             ; Contador09           ; work         ;
+;       |09D0:inst6|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst3|09D0:inst6                  ; 09D0                 ; work         ;
+;       |09D1:inst5|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst3|09D1:inst5                  ; 09D1                 ; work         ;
+;       |09D2:inst2|                 ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst3|09D2:inst2                  ; 09D2                 ; work         ;
+;       |09D3:inst4|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst3|09D3:inst4                  ; 09D3                 ; work         ;
+;    |Contador09:inst5|              ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst5                             ; Contador09           ; work         ;
+;       |09D0:inst6|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst5|09D0:inst6                  ; 09D0                 ; work         ;
+;       |09D1:inst5|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst5|09D1:inst5                  ; 09D1                 ; work         ;
+;       |09D2:inst2|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst5|09D2:inst2                  ; 09D2                 ; work         ;
+;       |09D3:inst4|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst5|09D3:inst4                  ; 09D3                 ; work         ;
+;    |Contador09:inst6|              ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst6                             ; Contador09           ; work         ;
+;       |09D0:inst6|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst6|09D0:inst6                  ; 09D0                 ; work         ;
+;       |09D1:inst5|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst6|09D1:inst5                  ; 09D1                 ; work         ;
+;       |09D2:inst2|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst6|09D2:inst2                  ; 09D2                 ; work         ;
+;       |09D3:inst4|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Contador09:inst6|09D3:inst4                  ; 09D3                 ; work         ;
+;    |ConversorHexaDecimal:inst27|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|ConversorHexaDecimal:inst27                  ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst28|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|ConversorHexaDecimal:inst28                  ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst29|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|ConversorHexaDecimal:inst29                  ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst30|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|ConversorHexaDecimal:inst30                  ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst31|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|ConversorHexaDecimal:inst31                  ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst33|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|ConversorHexaDecimal:inst33                  ; ConversorHexaDecimal ; work         ;
+;    |Frequencia:inst69|             ; 100 (0)             ; 65 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Frequencia:inst69                            ; Frequencia           ; work         ;
+;       |Seletora:inst|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Frequencia:inst69|Seletora:inst              ; Seletora             ; work         ;
+;       |Timing_Reference1KHz:inst3| ; 51 (51)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Frequencia:inst69|Timing_Reference1KHz:inst3 ; Timing_Reference1KHz ; work         ;
+;       |Timing_Reference:inst2|     ; 48 (48)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LAB5A|Frequencia:inst69|Timing_Reference:inst2     ; Timing_Reference     ; work         ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                    ;
++---------------------------------------------------+-------------------------------------------------------------------+
+; Register name                                     ; Reason for Removal                                                ;
++---------------------------------------------------+-------------------------------------------------------------------+
+; Contador06:inst|06D3:inst8|inst                   ; Stuck at GND due to stuck port data_in                            ;
+; Frequencia:inst69|Timing_Reference:inst2|count[0] ; Merged with Frequencia:inst69|Timing_Reference1KHz:inst3|count[0] ;
+; Total Number of Removed Registers = 2             ;                                                                   ;
++---------------------------------------------------+-------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 89    ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 23    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------+
+; Inverted Register Statistics                                    ;
++-------------------------------------------------------+---------+
+; Inverted Register                                     ; Fan out ;
++-------------------------------------------------------+---------+
+; Frequencia:inst69|Timing_Reference1KHz:inst3|count[0] ; 4       ;
+; Total number of inverted registers = 1                ;         ;
++-------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 46                          ;
+; cycloneiii_ff         ; 89                          ;
+;     CLR               ; 21                          ;
+;     ENA CLR SCLR      ; 2                           ;
+;     plain             ; 66                          ;
+; cycloneiii_lcell_comb ; 183                         ;
+;     arith             ; 61                          ;
+;         2 data inputs ; 60                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 122                         ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 78                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.86                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Nov  3 14:49:01 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LAB5A -c LAB5A
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/aldeena/Documentos/UTFPR/ProjetosDigitais/Prova1/Seletora.bdf
+    Info (12023): Found entity 1: Seletora
+Info (12021): Found 2 design units, including 1 entities, in source file Timing_Reference.vhd
+    Info (12022): Found design unit 1: Timing_Reference-freq_div File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Timing_Reference.vhd Line: 11
+    Info (12023): Found entity 1: Timing_Reference File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Timing_Reference.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/aldeena/Documentos/UTFPR/ProjetosDigitais/ConversorHexa/ConversorHexadecimal.vhd
+    Info (12022): Found design unit 1: ConversorHexaDecimal-arc_sevenseg File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/ConversorHexa/ConversorHexadecimal.vhd Line: 10
+    Info (12023): Found entity 1: ConversorHexaDecimal File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/ConversorHexa/ConversorHexadecimal.vhd Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file 09D3.bdf
+    Info (12023): Found entity 1: 09D3
+Info (12021): Found 1 design units, including 1 entities, in source file 09D2.bdf
+    Info (12023): Found entity 1: 09D2
+Info (12021): Found 1 design units, including 1 entities, in source file 09D1.bdf
+    Info (12023): Found entity 1: 09D1
+Info (12021): Found 1 design units, including 1 entities, in source file 09D0.bdf
+    Info (12023): Found entity 1: 09D0
+Info (12021): Found 1 design units, including 1 entities, in source file Contador09.bdf
+    Info (12023): Found entity 1: Contador09
+Info (12021): Found 1 design units, including 1 entities, in source file 06D3.bdf
+    Info (12023): Found entity 1: 06D3
+Info (12021): Found 1 design units, including 1 entities, in source file 06D2.bdf
+    Info (12023): Found entity 1: 06D2
+Info (12021): Found 1 design units, including 1 entities, in source file 06D1.bdf
+    Info (12023): Found entity 1: 06D1
+Info (12021): Found 1 design units, including 1 entities, in source file 06D0.bdf
+    Info (12023): Found entity 1: 06D0
+Info (12021): Found 1 design units, including 1 entities, in source file Contador06.bdf
+    Info (12023): Found entity 1: Contador06
+Info (12021): Found 1 design units, including 1 entities, in source file LAB5A.bdf
+    Info (12023): Found entity 1: LAB5A
+Info (12021): Found 1 design units, including 1 entities, in source file Frequencia.bdf
+    Info (12023): Found entity 1: Frequencia
+Info (12021): Found 2 design units, including 1 entities, in source file Timing_Reference1KHz.vhd
+    Info (12022): Found design unit 1: Timing_Reference1KHz-freq_div File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Timing_Reference1KHz.vhd Line: 11
+    Info (12023): Found entity 1: Timing_Reference1KHz File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Timing_Reference1KHz.vhd Line: 5
+Info (12127): Elaborating entity "LAB5A" for the top level hierarchy
+Warning (275011): Block or symbol "NOT" of instance "inst10" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst13" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst14" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst17" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst18" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst21" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst22" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst25" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst26" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst40" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst44" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst47" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst51" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst53" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst60" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst38" overlaps another block or symbol
+Info (12128): Elaborating entity "ConversorHexaDecimal" for hierarchy "ConversorHexaDecimal:inst27"
+Info (12128): Elaborating entity "Contador09" for hierarchy "Contador09:inst6"
+Info (12128): Elaborating entity "09D3" for hierarchy "Contador09:inst6|09D3:inst4"
+Info (12128): Elaborating entity "09D0" for hierarchy "Contador09:inst6|09D0:inst6"
+Info (12128): Elaborating entity "09D1" for hierarchy "Contador09:inst6|09D1:inst5"
+Warning (275009): Pin "Q2" not connected
+Warning (275008): Primitive "NOT" of instance "inst5" not used
+Info (12128): Elaborating entity "09D2" for hierarchy "Contador09:inst6|09D2:inst2"
+Info (12128): Elaborating entity "Frequencia" for hierarchy "Frequencia:inst69"
+Info (12128): Elaborating entity "Seletora" for hierarchy "Frequencia:inst69|Seletora:inst"
+Info (12128): Elaborating entity "Timing_Reference1KHz" for hierarchy "Frequencia:inst69|Timing_Reference1KHz:inst3"
+Warning (10492): VHDL Process Statement warning at Timing_Reference1KHz.vhd(27): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Timing_Reference1KHz.vhd Line: 27
+Info (12128): Elaborating entity "Timing_Reference" for hierarchy "Frequencia:inst69|Timing_Reference:inst2"
+Warning (10492): VHDL Process Statement warning at Timing_Reference.vhd(27): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LAB5A/Timing_Reference.vhd Line: 27
+Info (12128): Elaborating entity "Contador06" for hierarchy "Contador06:inst"
+Info (12128): Elaborating entity "06D3" for hierarchy "Contador06:inst|06D3:inst8"
+Info (12128): Elaborating entity "06D2" for hierarchy "Contador06:inst|06D2:inst7"
+Info (12128): Elaborating entity "06D0" for hierarchy "Contador06:inst|06D0:inst"
+Info (12128): Elaborating entity "06D1" for hierarchy "Contador06:inst|06D1:inst5"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer Frequencia:inst69|Seletora:inst|inst2~0
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 227 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 181 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 1014 megabytes
+    Info: Processing ended: Thu Nov  3 14:49:12 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:26
+
+

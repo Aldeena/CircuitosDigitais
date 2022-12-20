@@ -1,0 +1,22 @@
+*INDIVIDUAL: Documente TODO o processo de projeto (tabelas verdade, mapas de karnaugh, descrições VHDL com comentários, ...) e avaliação (simulação e avaliação na placa DE10 Lite) e faça. APÓS APRESENTAR O CIRCUITO FUNCIONANDO PARA O PROFESSOR, o upload de RELATÓRIO E DO DIRETORIO DE PROJETO COMPACTADO.
+
+1. FREQUENCÍMETRO com pelo menos 3 escalas de frequência (010.000 a 999.999 Hz, 001.000 a 999.999 kHz, 1.0000 a 9.9999 MHz) que devem ser apresentadas no display da placa DE10-lite. Apresentar a simulação é obrigatório. Testes na placa devem ser feitos com sinais provenientes de gerador de ondas retangulares implementado na FPGA e fornecido pelo professor, reserve as chaves SW9a SW7 para este módulo do professor.
+
+
+2. MODELO SIMPLIFICADO DE UM MICROPROCESSADOR contendo Maquina de estados para A UNIDADE DE CONTROLE de etapas (INSTRUCTION FETCH, REGISTER/MEMORY READ - DATA INPUT, ARITHMETIC/LOGIC OPERATION EXECUTION, OUTPUT DATA WRITE) de processamento de pelo menos 5 instruções assembly em um microprocessador (e.g.,  adição de dois operandos de 8 bits, subtração de dois operandos de 8 bits, operação lógica AND entre dois operandos de 8 bits,  operação lógica XOR entre  dois operandos de 8 bits). Operandos podem estar em uma memória RAM, instruções podem estar em uma memória ROM. Este projeto pode ajudar no futuro para a disciplina de ARQUITETURA DE COMPUTADORES.
+
+
+3. PLACAR ELETRÔNICO para pelo menos DUAS (selecionáveis por chaves sw9 e sw8) das seguintes MODALIDADES ESPORTIVAS: (a) Volei com possibilidade de até 5 sets, (b) Basquete com até 4 tempos,  (c) FUTSAL/Futebol de campo, (d) Handebol, (e) Beisebol, (f) outras modalidades são incentivadas, apenas discuta e solicite  aval do professor.   .
+Modalidades com controle de tempo por cronometro progressivo/regressivo devem ter a opção de compartilhar o display  simultaneamente ou não simultaneamente (seleção por SW qual informação aparece) entre tempo de jogo e placar em pontos, Indicação de tempos técnicos solicitados/remanescentes, marcações e correções de pontos/gols podem ser feitas utilizando push button e switches.
+
+4. JOGO DE MATEMÁTICA/lógica OU DE REPETIÇÃO DE SEQUENCIA OU ...
+4.1. Exemplo1: Com um tempo limitado (E.G., timer decrescente) dentro do qual uma série de operações matemáticas (soma, subtração) e lógicas (AND, OR, ...) são apresentadas ao operador e ele precisa dar a resposta para cada pergunta. Sempre que o operador acerta nova pergunta é apresentada. O operador pode seguir pontuando até que o tempo termine ou até que ele cometa um erro (operações com valores forneceidos em hexadecimal)
+
+4.2. Exemplo 2: Utilizando memórias e comparadores, criar um jogo em que informações sucessivas da memória são apresentadas ao operador que precisa repetir a informação apresentada utilizando push buttons, SWs, ... A cada interação a sequencia é aumentada em um informação dificultando a reprodução da sequencia pelo operador. Um contador de eventos deve guardar o maior número de informações repetidas sem erro pelo operador. Exemplo de sequencia de bits: 0. 01, 011, 0110, 01101, 011011, 0110111, 01101110, ..... Pode-se utilizar numeros hexa apresentado no display e que precisa ser inserido via SWs.
+
+N. Algum projeto de interesse pessoal com clara relação com a disciplina Circuitos Digitais e que possua nível de complexidade equivalente a projetos sugeridos aqui. Proponha ao professor apresentando uma folha A4 com os objetivos do projeto e principais componentes digitais a serem implementados. É necessário o AVAL do professor. Desta forma, obtenha a rubrica do professor na folha apresentada indicando o aceite e sugestões de componentes
+
+P.S.: PROJETOS DE MAIOR COMPLEXIDADE podem ser feitos em dupla MAS É NECESSÁRIO que o projeto tenha PARTES QUE POSSAM SER DEFENDIDAS INDIVIDUALMENTE por um dos componentes da dupla e que isto seja APROVADO PELO PROFESSOR ANTES DO INICIO DO PROJETO.
+
+
+Projeto Escolhido: Placar eletrônico para as modalidades de vôlei e baseball

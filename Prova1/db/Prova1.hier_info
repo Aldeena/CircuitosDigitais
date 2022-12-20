@@ -1,0 +1,89 @@
+|Prova1
+HEX0a <= ConversorHexaDecimal:inst18.h0
+Clock => inst.CLK
+Seletora => Seletora:inst4.SEL
+Seletora => Seletora:inst5.SEL
+Seletora => Seletora:inst6.SEL
+HEX0b <= ConversorHexaDecimal:inst18.h1
+HEX0c <= ConversorHexaDecimal:inst18.h2
+HEX0d <= ConversorHexaDecimal:inst18.h3
+HEX0e <= ConversorHexaDecimal:inst18.h4
+HEX0f <= ConversorHexaDecimal:inst18.h5
+HEX0g <= ConversorHexaDecimal:inst18.h6
+
+
+|Prova1|ConversorHexaDecimal:inst18
+A => h0.IN0
+A => h0.IN0
+A => h1.IN0
+A => h0.IN0
+A => h0.IN0
+A => h4.IN0
+A => h5.IN0
+B => h0.IN1
+B => h0.IN1
+B => h1.IN0
+B => h0.IN1
+B => h0.IN1
+B => h4.IN0
+C => h0.IN1
+C => h1.IN1
+C => h1.IN1
+C => h2.IN1
+C => h2.IN1
+C => h5.IN1
+C => h6.IN1
+C => h0.IN1
+C => h0.IN1
+C => h0.IN1
+C => h4.IN1
+D => h0.IN1
+D => h0.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h3.IN1
+D => h4.IN1
+D => h4.IN1
+D => h5.IN1
+D => h5.IN1
+D => h6.IN1
+D => h0.IN1
+D => h1.IN1
+D => h1.IN1
+D => h2.IN1
+D => h3.IN1
+D => h6.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prova1|Seletora:inst6
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+SEL => inst1.IN0
+SEL => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Prova1|Seletora:inst5
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+SEL => inst1.IN0
+SEL => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+
+|Prova1|Seletora:inst4
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+SEL => inst1.IN0
+SEL => inst3.IN0
+Y => inst1.IN1
+X => inst.IN0
+
+

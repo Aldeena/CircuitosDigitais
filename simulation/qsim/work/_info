@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aldeena/Documentos/UTFPR/ProjetosDigitais/simulation/qsim
+vhard_block
+Z1 !s110 1661391096
+!i10b 1
+!s100 4D5U[bWXEli=Ba=[PGVF=3
+I:j7eZ;1<HnA6Un=36m;cG0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1661391095
+Z4 8Teste.vo
+Z5 FTeste.vo
+L0 203
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1661391096.000000
+Z8 !s107 Teste.vo|
+Z9 !s90 -work|work|Teste.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vTeste
+R1
+!i10b 1
+!s100 SX;f4EVNoV5i7L4Ad7ORd1
+IMogV^AI5lQlCiMKn]6H4n0
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@teste
+vTeste_vlg_vec_tst
+R1
+!i10b 1
+!s100 iTFa<dWD63]Hh?T1=0[YP0
+Inl6[We6OU@9fha1KW;2UU0
+R2
+R0
+R3
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@teste_vlg_vec_tst

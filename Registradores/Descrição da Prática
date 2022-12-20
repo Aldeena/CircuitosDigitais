@@ -1,0 +1,9 @@
+CONDIÇÃO INICIAL DA PLACA: Ao configurar a placa com o seu arquivo.sof, TODOS OS DISPLAYS (HEX5..HEX0) devem conter o número ZERO.
+Projete e desenvolva um circuito baseado no seu LAB01 (somador/subtrator com conversor hex_7seg) onde somente 4 chaves (SW3..SW0) serão utilizadas para ser a interface de entrada de operandos para a operação aritmética.
+
+Você também estará testando o uso de REGISTRADORES DE DESLOCAMENTO.
+
+O seu circuito deve REGISTRAR um operando de entrada correspondente ao número binário selecionado nas chaves SW3-SW2-SW1-SW0 sempre que o push button) PB0 for acionado. Quando isto acontecer, o número equivalente em HEXADECINAL deve ser apresentado no display HEX0.  Adicionalmente, ao fazer uma entrada de operando, o operando anterior deve ser DESLOCADO para o registrador do próximo display. Ou seja, sempre que PB0 for acionado, um novo número vai para o registrador do HEX0 e o seguinte deslocamento é realizado: HEX4>HEX5,HEX3>HEX4, HEX2>HEX3,HEX1>HEX2, HEX0>HEX1, SW3aSW0>HEX0.
+
+
+O PB1 será utilizado para, quando acionado, atualizar os DISPLAYS HEX5 e HEX4 com o resultado da soma (SW4=0) ou da subtração (SW4=1) dos números apresentados nos displays HEX1(operando B) e HEX0(operando A).

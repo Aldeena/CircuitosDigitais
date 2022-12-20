@@ -1,0 +1,14 @@
+LAB04 - GERADOR DE SEQUENCIA - MAQUINA DE ESTADOS
+
+Projete e implemente uma máquina de estados síncrona utilizando Flip Flops tipo D ou JK. Apresente o projeto (folha, caderno, ...) e o circuito implementado funcionando na placa DE10-Lite. 
+Os estados devem aparecer em um dos displays da placa. Utilize como evento de clock o sinal de um push button ou um sinal com aproximadamente 0.2 Hz a partir do sinal de clock interno de 50 MHz.
+A sequência a ser gerada deve ser baseada no R.A. do aluno conforme o seguinte algoritmo:
+
+1) Considerando o seu R.A. crie lacunas para as posições onde há digitos repetidos.
+Ex.: 1763369 -> 1763 _ _ 9
+
+2) Conte quantos dígitos pares e ímpares restaram. Por exemplo, na sequencia acima tem mais ímpares (i.e., 1 7 3 9)  do que pares. Preencha as lacunas com números pares ainda não utilizados caso a sequencia restante tenha mais números ímpares (i.e., 1763 0 2 9). Caso a sequencia tenha mais dígitos pares, preencha com números ímpares ainda não utilizados. 
+
+
+3) Terminada a substituição na string do seu R.A. continue criando uma sequencia com os números pares ainda não utilizados e depois os números ímpares não utilizados.
+Ex. 176029 48ACE35BDF

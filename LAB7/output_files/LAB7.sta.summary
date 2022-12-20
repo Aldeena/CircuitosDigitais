@@ -1,0 +1,413 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -4.123
+TNS   : -53.651
+
+Type  : Slow 1200mV 85C Model Setup 'InternalCLK50MHz'
+Slack : -4.088
+TNS   : -70.714
+
+Type  : Slow 1200mV 85C Model Setup 'Timing_Reference1Hz:inst5|tmp'
+Slack : -3.866
+TNS   : -36.846
+
+Type  : Slow 1200mV 85C Model Setup 'Contador256:inst4|counter:inst|inst18'
+Slack : -0.601
+TNS   : -1.106
+
+Type  : Slow 1200mV 85C Model Setup 'Contador256:inst4|counter:inst1|inst4'
+Slack : -0.548
+TNS   : -0.548
+
+Type  : Slow 1200mV 85C Model Setup 'Contador256:inst4|counter:inst|inst4'
+Slack : -0.508
+TNS   : -0.913
+
+Type  : Slow 1200mV 85C Model Setup 'Contador256:inst4|counter:inst|inst5'
+Slack : -0.405
+TNS   : -0.405
+
+Type  : Slow 1200mV 85C Model Setup 'Contador256:inst4|counter:inst1|inst18'
+Slack : -0.345
+TNS   : -0.345
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Contador256:inst4|counter:inst1|inst5'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -0.004
+TNS   : -0.004
+
+Type  : Slow 1200mV 85C Model Hold 'Timing_Reference1Hz:inst5|tmp'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador256:inst4|counter:inst|inst5'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador256:inst4|counter:inst1|inst5'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador256:inst4|counter:inst|inst18'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador256:inst4|counter:inst|inst4'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador256:inst4|counter:inst1|inst18'
+Slack : 0.510
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'InternalCLK50MHz'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador256:inst4|counter:inst1|inst4'
+Slack : 0.756
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -7.502
+TNS   : -59.034
+
+Type  : Slow 1200mV 85C Model Recovery 'Timing_Reference1Hz:inst5|tmp'
+Slack : -6.604
+TNS   : -51.850
+
+Type  : Slow 1200mV 85C Model Removal 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : 0.586
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Timing_Reference1Hz:inst5|tmp'
+Slack : 0.732
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'InternalCLK50MHz'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -2.422
+TNS   : -93.982
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Timing_Reference1Hz:inst5|tmp'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst18'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst4'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst5'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst18'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst4'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst5'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Setup 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -3.746
+TNS   : -49.136
+
+Type  : Slow 1200mV 0C Model Setup 'InternalCLK50MHz'
+Slack : -3.730
+TNS   : -61.201
+
+Type  : Slow 1200mV 0C Model Setup 'Timing_Reference1Hz:inst5|tmp'
+Slack : -3.452
+TNS   : -32.703
+
+Type  : Slow 1200mV 0C Model Setup 'Contador256:inst4|counter:inst|inst18'
+Slack : -0.526
+TNS   : -0.923
+
+Type  : Slow 1200mV 0C Model Setup 'Contador256:inst4|counter:inst1|inst4'
+Slack : -0.476
+TNS   : -0.476
+
+Type  : Slow 1200mV 0C Model Setup 'Contador256:inst4|counter:inst|inst4'
+Slack : -0.399
+TNS   : -0.742
+
+Type  : Slow 1200mV 0C Model Setup 'Contador256:inst4|counter:inst|inst5'
+Slack : -0.314
+TNS   : -0.314
+
+Type  : Slow 1200mV 0C Model Setup 'Contador256:inst4|counter:inst1|inst18'
+Slack : -0.278
+TNS   : -0.278
+
+Type  : Slow 1200mV 0C Model Setup 'Contador256:inst4|counter:inst1|inst5'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -0.035
+TNS   : -0.042
+
+Type  : Slow 1200mV 0C Model Hold 'Timing_Reference1Hz:inst5|tmp'
+Slack : 0.246
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador256:inst4|counter:inst|inst5'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador256:inst4|counter:inst1|inst5'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador256:inst4|counter:inst|inst18'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador256:inst4|counter:inst|inst4'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador256:inst4|counter:inst1|inst18'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'InternalCLK50MHz'
+Slack : 0.598
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador256:inst4|counter:inst1|inst4'
+Slack : 0.717
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -7.118
+TNS   : -55.811
+
+Type  : Slow 1200mV 0C Model Recovery 'Timing_Reference1Hz:inst5|tmp'
+Slack : -6.225
+TNS   : -48.667
+
+Type  : Slow 1200mV 0C Model Removal 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Timing_Reference1Hz:inst5|tmp'
+Slack : 0.674
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'InternalCLK50MHz'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -2.333
+TNS   : -88.955
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Timing_Reference1Hz:inst5|tmp'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst18'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst4'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst5'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst18'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst4'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst5'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -1.630
+TNS   : -15.320
+
+Type  : Fast 1200mV 0C Model Setup 'Timing_Reference1Hz:inst5|tmp'
+Slack : -1.611
+TNS   : -12.605
+
+Type  : Fast 1200mV 0C Model Setup 'InternalCLK50MHz'
+Slack : -1.251
+TNS   : -10.179
+
+Type  : Fast 1200mV 0C Model Setup 'Contador256:inst4|counter:inst|inst18'
+Slack : 0.088
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador256:inst4|counter:inst|inst4'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador256:inst4|counter:inst1|inst4'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador256:inst4|counter:inst|inst5'
+Slack : 0.137
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador256:inst4|counter:inst1|inst18'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador256:inst4|counter:inst1|inst5'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -0.018
+TNS   : -0.018
+
+Type  : Fast 1200mV 0C Model Hold 'Timing_Reference1Hz:inst5|tmp'
+Slack : 0.128
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador256:inst4|counter:inst|inst5'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador256:inst4|counter:inst1|inst18'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador256:inst4|counter:inst|inst4'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador256:inst4|counter:inst1|inst5'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador256:inst4|counter:inst|inst18'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador256:inst4|counter:inst1|inst4'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'InternalCLK50MHz'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -3.055
+TNS   : -23.923
+
+Type  : Fast 1200mV 0C Model Recovery 'Timing_Reference1Hz:inst5|tmp'
+Slack : -2.439
+TNS   : -18.995
+
+Type  : Fast 1200mV 0C Model Removal 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Timing_Reference1Hz:inst5|tmp'
+Slack : 0.346
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'InternalCLK50MHz'
+Slack : -3.000
+TNS   : -37.122
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.189
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador0C:inst2|0CD0:inst2|inst3'
+Slack : -1.000
+TNS   : -43.905
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Timing_Reference1Hz:inst5|tmp'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst18'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst4'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst|inst5'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst18'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst4'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador256:inst4|counter:inst1|inst5'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

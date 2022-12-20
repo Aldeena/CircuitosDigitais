@@ -1,0 +1,19 @@
+LAB03 - Registradores SIPO / PISO
+
+Serial-in Parallel-out (SIPO) converter, Parallel-in Serial-out (PISO) converter
+
+Projete e implemente um conversor PISO de 8 bits. As entradas do PISO serão as chaves SW7..SW0. Este valor CARREGADO deve ser apresentado nos displays HEX1-HEX0.
+
+Projete e implemente um conversor SIPO de 8 bits. A saída do SIPO deve ser conectada aos displays HEX5-HEX4. Os bits internos do SIPO devem ser constantemente apresentados nos LEDS LED7 a LED0.
+
+Conecte a saída do PISO na Entrada do SIPO
+
+Utilize as chaves SW7..SW0 para entrar de forma paralela o valor binário de 8 bits que será transmitido de forma serial.
+
+Utilize PB0 para REGISTRAR o número binário de entrada e apresentar nos displays HEX1-HEX0
+
+
+Utilize PB1 para deslocar o bit no PISO DEPOIS DO MESMO TER SIDO CARREGADO com o byte de entrada.
+O mesmo sinal PB1 deverá ser o clock para deslocamentos de bits no SIPO
+
+Simule e teste na placa. Para o teste, verifique se um número carregado no PISO e deslocado para o SIPO Como sempre, após ter certeza do funcionamento de seu circuito na placa, chame o professor para fazer a defesa do funcionamento de seu circuito.

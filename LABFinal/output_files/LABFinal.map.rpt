@@ -1,0 +1,715 @@
+Analysis & Synthesis report for LABFinal
+Thu Dec 15 13:42:31 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |LABFinal|PlacarBaseball:inst1|BallCounter:inst6|estado
+  9. State Machine - |LABFinal|PlacarBaseball:inst1|StrikeCounter:inst7|estado
+ 10. State Machine - |LABFinal|PlacarBaseball:inst1|OutCounter:inst8|estado
+ 11. State Machine - |LABFinal|PlacarVolei:inst|SetCounter:inst|estado
+ 12. State Machine - |LABFinal|PlacarVolei:inst|SetCounter:inst1|estado
+ 13. State Machine - |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst6|Desafio:inst1|estado
+ 14. State Machine - |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst5|Desafio:inst1|estado
+ 15. User-Specified and Inferred Latches
+ 16. Registers Removed During Synthesis
+ 17. General Register Statistics
+ 18. Inverted Register Statistics
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Dec 15 13:42:31 2022       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; LABFinal                                    ;
+; Top-level Entity Name              ; LABFinal                                    ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 1,224                                       ;
+;     Total combinational functions  ; 1,207                                       ;
+;     Dedicated logic registers      ; 303                                         ;
+; Total registers                    ; 303                                         ;
+; Total pins                         ; 55                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; LABFinal           ; LABFinal           ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
+;     Processors 9-12        ;   0.1%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                           ; Library ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+; Contadorx99.vhd                           ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd               ;         ;
+; Pontos.bdf                                ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Pontos.bdf                    ;         ;
+; Contador06.bdf                            ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contador06.bdf                ;         ;
+; 06D3.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/06D3.bdf                      ;         ;
+; 06D2.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/06D2.bdf                      ;         ;
+; 06D1.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/06D1.bdf                      ;         ;
+; 06D0.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/06D0.bdf                      ;         ;
+; Seletora.bdf                              ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Seletora.bdf                  ;         ;
+; Alternadora.bdf                           ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Alternadora.bdf               ;         ;
+; Contador09.bdf                            ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contador09.bdf                ;         ;
+; ../ConversorHexa/ConversorHexadecimal.vhd ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/ConversorHexa/ConversorHexadecimal.vhd ;         ;
+; PlacarBaseball.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/PlacarBaseball.bdf            ;         ;
+; BallCounter.vhd                           ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd               ;         ;
+; StrikeCounter.vhd                         ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd             ;         ;
+; OutCounter.vhd                            ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd                ;         ;
+; SetCounter.vhd                            ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/SetCounter.vhd                ;         ;
+; PlacarVolei.bdf                           ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/PlacarVolei.bdf               ;         ;
+; PontoVolei.bdf                            ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/PontoVolei.bdf                ;         ;
+; Tempo_Desafio.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Tempo_Desafio.bdf             ;         ;
+; Tempo.vhd                                 ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Tempo.vhd                     ;         ;
+; Desafio.vhd                               ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Desafio.vhd                   ;         ;
+; MUX8x4.bdf                                ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/MUX8x4.bdf                    ;         ;
+; Chaves.vhd                                ; yes             ; User VHDL File                     ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Chaves.vhd                    ;         ;
+; LABFinal.bdf                              ; yes             ; User Block Diagram/Schematic File  ; /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/LABFinal.bdf                  ;         ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 1,224     ;
+;                                             ;           ;
+; Total combinational functions               ; 1207      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 361       ;
+;     -- 3 input functions                    ; 304       ;
+;     -- <=2 input functions                  ; 542       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 711       ;
+;     -- arithmetic mode                      ; 496       ;
+;                                             ;           ;
+; Total registers                             ; 303       ;
+;     -- Dedicated logic registers            ; 303       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 55        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; SW4~input ;
+; Maximum fan-out                             ; 150       ;
+; Total fan-out                               ; 4549      ;
+; Average fan-out                             ; 2.81      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                        ;
++----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                          ; Entity Name          ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------+----------------------+--------------+
+; |LABFinal                        ; 1207 (0)            ; 303 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 55   ; 0            ; 0          ; |LABFinal                                                    ; LABFinal             ; work         ;
+;    |ConversorHexaDecimal:inst11| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|ConversorHexaDecimal:inst11                        ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst4|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|ConversorHexaDecimal:inst4                         ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst5|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|ConversorHexaDecimal:inst5                         ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst6|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|ConversorHexaDecimal:inst6                         ; ConversorHexaDecimal ; work         ;
+;    |ConversorHexaDecimal:inst9|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|ConversorHexaDecimal:inst9                         ; ConversorHexaDecimal ; work         ;
+;    |MUX8x4:inst10|               ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst10                                      ; MUX8x4               ; work         ;
+;       |Seletora:inst1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst10|Seletora:inst1                       ; Seletora             ; work         ;
+;       |Seletora:inst2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst10|Seletora:inst2                       ; Seletora             ; work         ;
+;       |Seletora:inst3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst10|Seletora:inst3                       ; Seletora             ; work         ;
+;       |Seletora:inst|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst10|Seletora:inst                        ; Seletora             ; work         ;
+;    |MUX8x4:inst2|                ; 6 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst2                                       ; MUX8x4               ; work         ;
+;       |Seletora:inst1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst2|Seletora:inst1                        ; Seletora             ; work         ;
+;       |Seletora:inst2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst2|Seletora:inst2                        ; Seletora             ; work         ;
+;       |Seletora:inst3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst2|Seletora:inst3                        ; Seletora             ; work         ;
+;       |Seletora:inst|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst2|Seletora:inst                         ; Seletora             ; work         ;
+;    |MUX8x4:inst3|                ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst3                                       ; MUX8x4               ; work         ;
+;       |Seletora:inst1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst3|Seletora:inst1                        ; Seletora             ; work         ;
+;       |Seletora:inst2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst3|Seletora:inst2                        ; Seletora             ; work         ;
+;       |Seletora:inst3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst3|Seletora:inst3                        ; Seletora             ; work         ;
+;       |Seletora:inst|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst3|Seletora:inst                         ; Seletora             ; work         ;
+;    |MUX8x4:inst7|                ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst7                                       ; MUX8x4               ; work         ;
+;       |Seletora:inst1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst7|Seletora:inst1                        ; Seletora             ; work         ;
+;       |Seletora:inst2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst7|Seletora:inst2                        ; Seletora             ; work         ;
+;       |Seletora:inst3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst7|Seletora:inst3                        ; Seletora             ; work         ;
+;       |Seletora:inst|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst7|Seletora:inst                         ; Seletora             ; work         ;
+;    |MUX8x4:inst8|                ; 6 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst8                                       ; MUX8x4               ; work         ;
+;       |Seletora:inst1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst8|Seletora:inst1                        ; Seletora             ; work         ;
+;       |Seletora:inst2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst8|Seletora:inst2                        ; Seletora             ; work         ;
+;       |Seletora:inst3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst8|Seletora:inst3                        ; Seletora             ; work         ;
+;       |Seletora:inst|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|MUX8x4:inst8|Seletora:inst                         ; Seletora             ; work         ;
+;    |PlacarBaseball:inst1|        ; 569 (5)             ; 146 (1)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1                               ; PlacarBaseball       ; work         ;
+;       |Alternadora:inst13|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|Alternadora:inst13            ; Alternadora          ; work         ;
+;       |Alternadora:inst14|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|Alternadora:inst14            ; Alternadora          ; work         ;
+;       |BallCounter:inst6|        ; 8 (8)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|BallCounter:inst6             ; BallCounter          ; work         ;
+;       |Contador09:inst2|         ; 6 (6)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|Contador09:inst2              ; Contador09           ; work         ;
+;       |OutCounter:inst8|         ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|OutCounter:inst8              ; OutCounter           ; work         ;
+;       |Pontos:inst1|             ; 267 (0)             ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|Pontos:inst1                  ; Pontos               ; work         ;
+;          |Contadorx99:inst|      ; 267 (267)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst ; Contadorx99          ; work         ;
+;       |Pontos:inst|              ; 267 (0)             ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|Pontos:inst                   ; Pontos               ; work         ;
+;          |Contadorx99:inst|      ; 267 (267)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst  ; Contadorx99          ; work         ;
+;       |StrikeCounter:inst7|      ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarBaseball:inst1|StrikeCounter:inst7           ; StrikeCounter        ; work         ;
+;    |PlacarVolei:inst|            ; 567 (0)             ; 157 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst                                   ; PlacarVolei          ; work         ;
+;       |Chaves:inst11|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Chaves:inst11                     ; Chaves               ; work         ;
+;       |Chaves:inst14|            ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Chaves:inst14                     ; Chaves               ; work         ;
+;       |Contador06:inst2|         ; 3 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Contador06:inst2                  ; Contador06           ; work         ;
+;          |06D0:inst|             ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Contador06:inst2|06D0:inst        ; 06D0                 ; work         ;
+;          |06D1:inst5|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Contador06:inst2|06D1:inst5       ; 06D1                 ; work         ;
+;          |06D2:inst7|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Contador06:inst2|06D2:inst7       ; 06D2                 ; work         ;
+;       |PontoVolei:inst3|         ; 267 (0)             ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|PontoVolei:inst3                  ; PontoVolei           ; work         ;
+;          |Contadorx99:inst|      ; 267 (267)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst ; Contadorx99          ; work         ;
+;       |PontoVolei:inst4|         ; 267 (0)             ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|PontoVolei:inst4                  ; PontoVolei           ; work         ;
+;          |Contadorx99:inst|      ; 267 (267)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst ; Contadorx99          ; work         ;
+;       |SetCounter:inst1|         ; 5 (5)               ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|SetCounter:inst1                  ; SetCounter           ; work         ;
+;       |SetCounter:inst|          ; 5 (5)               ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|SetCounter:inst                   ; SetCounter           ; work         ;
+;       |Tempo_Desafio:inst5|      ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst5               ; Tempo_Desafio        ; work         ;
+;          |Desafio:inst1|         ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst5|Desafio:inst1 ; Desafio              ; work         ;
+;          |Tempo:inst|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst5|Tempo:inst    ; Tempo                ; work         ;
+;       |Tempo_Desafio:inst6|      ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst6               ; Tempo_Desafio        ; work         ;
+;          |Desafio:inst1|         ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst6|Desafio:inst1 ; Desafio              ; work         ;
+;          |Tempo:inst|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst6|Tempo:inst    ; Tempo                ; work         ;
+;    |Seletora:inst15|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst15                                    ; Seletora             ; work         ;
+;    |Seletora:inst16|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst16                                    ; Seletora             ; work         ;
+;    |Seletora:inst17|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst17                                    ; Seletora             ; work         ;
+;    |Seletora:inst18|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst18                                    ; Seletora             ; work         ;
+;    |Seletora:inst19|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst19                                    ; Seletora             ; work         ;
+;    |Seletora:inst20|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst20                                    ; Seletora             ; work         ;
+;    |Seletora:inst21|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst21                                    ; Seletora             ; work         ;
+;    |Seletora:inst22|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst22                                    ; Seletora             ; work         ;
+;    |Seletora:inst24|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst24                                    ; Seletora             ; work         ;
+;    |Seletora:inst25|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LABFinal|Seletora:inst25                                    ; Seletora             ; work         ;
++----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------+
+; State Machine - |LABFinal|PlacarBaseball:inst1|BallCounter:inst6|estado ;
++-----------+-----------+-----------+-----------+-----------+-------------+
+; Name      ; estado.s4 ; estado.s3 ; estado.s2 ; estado.s1 ; estado.s0   ;
++-----------+-----------+-----------+-----------+-----------+-------------+
+; estado.s0 ; 0         ; 0         ; 0         ; 0         ; 0           ;
+; estado.s1 ; 0         ; 0         ; 0         ; 1         ; 1           ;
+; estado.s2 ; 0         ; 0         ; 1         ; 0         ; 1           ;
+; estado.s3 ; 0         ; 1         ; 0         ; 0         ; 1           ;
+; estado.s4 ; 1         ; 0         ; 0         ; 0         ; 1           ;
++-----------+-----------+-----------+-----------+-----------+-------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------+
+; State Machine - |LABFinal|PlacarBaseball:inst1|StrikeCounter:inst7|estado ;
++-----------+-----------+-----------+-----------+---------------------------+
+; Name      ; estado.s3 ; estado.s2 ; estado.s1 ; estado.s0                 ;
++-----------+-----------+-----------+-----------+---------------------------+
+; estado.s0 ; 0         ; 0         ; 0         ; 0                         ;
+; estado.s1 ; 0         ; 0         ; 1         ; 1                         ;
+; estado.s2 ; 0         ; 1         ; 0         ; 1                         ;
+; estado.s3 ; 1         ; 0         ; 0         ; 1                         ;
++-----------+-----------+-----------+-----------+---------------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------+
+; State Machine - |LABFinal|PlacarBaseball:inst1|OutCounter:inst8|estado ;
++-----------+-----------+-----------+-----------+------------------------+
+; Name      ; estado.s3 ; estado.s2 ; estado.s1 ; estado.s0              ;
++-----------+-----------+-----------+-----------+------------------------+
+; estado.s0 ; 0         ; 0         ; 0         ; 0                      ;
+; estado.s1 ; 0         ; 0         ; 1         ; 1                      ;
+; estado.s2 ; 0         ; 1         ; 0         ; 1                      ;
+; estado.s3 ; 1         ; 0         ; 0         ; 1                      ;
++-----------+-----------+-----------+-----------+------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------+
+; State Machine - |LABFinal|PlacarVolei:inst|SetCounter:inst|estado     ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; Name      ; estado.s4 ; estado.s3 ; estado.s2 ; estado.s1 ; estado.s0 ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; estado.s0 ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; estado.s1 ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; estado.s2 ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; estado.s3 ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; estado.s4 ; 1         ; 0         ; 0         ; 0         ; 1         ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------+
+; State Machine - |LABFinal|PlacarVolei:inst|SetCounter:inst1|estado    ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; Name      ; estado.s4 ; estado.s3 ; estado.s2 ; estado.s1 ; estado.s0 ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; estado.s0 ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; estado.s1 ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; estado.s2 ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; estado.s3 ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; estado.s4 ; 1         ; 0         ; 0         ; 0         ; 1         ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------+
+; State Machine - |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst6|Desafio:inst1|estado ;
++-----------+-----------+-----------+-------------------------------------------------+
+; Name      ; estado.s2 ; estado.s1 ; estado.s0                                       ;
++-----------+-----------+-----------+-------------------------------------------------+
+; estado.s0 ; 0         ; 0         ; 0                                               ;
+; estado.s1 ; 0         ; 1         ; 1                                               ;
+; estado.s2 ; 1         ; 0         ; 1                                               ;
++-----------+-----------+-----------+-------------------------------------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------+
+; State Machine - |LABFinal|PlacarVolei:inst|Tempo_Desafio:inst5|Desafio:inst1|estado ;
++-----------+-----------+-----------+-------------------------------------------------+
+; Name      ; estado.s2 ; estado.s1 ; estado.s0                                       ;
++-----------+-----------+-----------+-------------------------------------------------+
+; estado.s0 ; 0         ; 0         ; 0                                               ;
+; estado.s1 ; 0         ; 1         ; 1                                               ;
+; estado.s2 ; 1         ; 0         ; 1                                               ;
++-----------+-----------+-----------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                ;
++------------------------------------------------------+----------------------------------------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal                                ; Free of Timing Hazards ;
++------------------------------------------------------+----------------------------------------------------+------------------------+
+; PlacarBaseball:inst1|OutCounter:inst8|L1             ; PlacarBaseball:inst1|OutCounter:inst8|L1           ; yes                    ;
+; PlacarBaseball:inst1|OutCounter:inst8|L2             ; PlacarBaseball:inst1|OutCounter:inst8|estado.s3    ; yes                    ;
+; PlacarBaseball:inst1|StrikeCounter:inst7|L4          ; PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3 ; yes                    ;
+; PlacarBaseball:inst1|StrikeCounter:inst7|L5          ; PlacarBaseball:inst1|StrikeCounter:inst7|L5        ; yes                    ;
+; PlacarBaseball:inst1|BallCounter:inst6|L8            ; PlacarBaseball:inst1|BallCounter:inst6|estado.s1   ; yes                    ;
+; PlacarBaseball:inst1|BallCounter:inst6|L7            ; PlacarBaseball:inst1|BallCounter:inst6|L7          ; yes                    ;
+; PlacarBaseball:inst1|OutCounter:inst8|en_switch_team ; PlacarBaseball:inst1|OutCounter:inst8|L2           ; yes                    ;
+; PlacarBaseball:inst1|StrikeCounter:inst7|en_strike   ; PlacarBaseball:inst1|StrikeCounter:inst7|L4        ; yes                    ;
+; PlacarBaseball:inst1|BallCounter:inst6|en_walk       ; PlacarBaseball:inst1|BallCounter:inst6|WideOr1     ; yes                    ;
+; Number of user-specified and inferred latches = 9    ;                                                    ;                        ;
++------------------------------------------------------+----------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                         ;
++---------------------------------------------------+----------------------------------------+
+; Register name                                     ; Reason for Removal                     ;
++---------------------------------------------------+----------------------------------------+
+; PlacarVolei:inst|Contador06:inst2|06D3:inst8|inst ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1             ;                                        ;
++---------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 303   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 294   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 142   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------+
+; Inverted Register Statistics                                ;
++---------------------------------------------------+---------+
+; Inverted Register                                 ; Fan out ;
++---------------------------------------------------+---------+
+; PlacarVolei:inst|Contador06:inst2|06D0:inst|inst3 ; 4       ;
+; PlacarBaseball:inst1|Contador09:inst2|inst        ; 4       ;
+; Total number of inverted registers = 2            ;         ;
++---------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |LABFinal|PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst|contagem1[4]  ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |LABFinal|PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst|contagem1[3]  ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |LABFinal|PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst|contagem1[10] ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |LABFinal|PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst|contagem1[13]  ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |LABFinal|PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst|contagem0[19] ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |LABFinal|PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst|contagem0[5]  ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |LABFinal|PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst|contagem0[17] ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |LABFinal|PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst|contagem0[15]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LABFinal|PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst|contagem1[31] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LABFinal|PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst|contagem1[0]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LABFinal|PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst|contagem1[0]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LABFinal|PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst|contagem1[0]   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LABFinal|PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst|contagem0[0]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LABFinal|PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst|contagem0[0]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LABFinal|PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst|contagem0[31] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |LABFinal|PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst|contagem0[0]   ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |LABFinal|MUX8x4:inst10|Seletora:inst3|inst2                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 55                          ;
+; cycloneiii_ff         ; 303                         ;
+;     CLR               ; 158                         ;
+;     ENA               ; 6                           ;
+;     ENA CLR           ; 136                         ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 1207                        ;
+;     arith             ; 496                         ;
+;         2 data inputs ; 484                         ;
+;         3 data inputs ; 12                          ;
+;     normal            ; 711                         ;
+;         1 data inputs ; 33                          ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 292                         ;
+;         4 data inputs ; 361                         ;
+;                       ;                             ;
+; Max LUT depth         ; 17.70                       ;
+; Average LUT depth     ; 10.42                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Dec 15 13:42:15 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LABFinal -c LABFinal
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file Contadorx99.vhd
+    Info (12022): Found design unit 1: Contadorx99-i File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 14
+    Info (12023): Found entity 1: Contadorx99 File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file Pontos.bdf
+    Info (12023): Found entity 1: Pontos
+Info (12021): Found 1 design units, including 1 entities, in source file counter.bdf
+    Info (12023): Found entity 1: counter
+Info (12021): Found 1 design units, including 1 entities, in source file Contador06.bdf
+    Info (12023): Found entity 1: Contador06
+Info (12021): Found 1 design units, including 1 entities, in source file 06D3.bdf
+    Info (12023): Found entity 1: 06D3
+Info (12021): Found 1 design units, including 1 entities, in source file 06D2.bdf
+    Info (12023): Found entity 1: 06D2
+Info (12021): Found 1 design units, including 1 entities, in source file 06D1.bdf
+    Info (12023): Found entity 1: 06D1
+Info (12021): Found 1 design units, including 1 entities, in source file 06D0.bdf
+    Info (12023): Found entity 1: 06D0
+Info (12021): Found 1 design units, including 1 entities, in source file Seletora.bdf
+    Info (12023): Found entity 1: Seletora
+Info (12021): Found 1 design units, including 1 entities, in source file Alternadora.bdf
+    Info (12023): Found entity 1: Alternadora
+Info (12021): Found 1 design units, including 1 entities, in source file Contador09.bdf
+    Info (12023): Found entity 1: Contador09
+Info (12021): Found 2 design units, including 1 entities, in source file /home/aldeena/Documentos/UTFPR/ProjetosDigitais/ConversorHexa/ConversorHexadecimal.vhd
+    Info (12022): Found design unit 1: ConversorHexaDecimal-arc_sevenseg File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/ConversorHexa/ConversorHexadecimal.vhd Line: 10
+    Info (12023): Found entity 1: ConversorHexaDecimal File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/ConversorHexa/ConversorHexadecimal.vhd Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file PlacarBaseball.bdf
+    Info (12023): Found entity 1: PlacarBaseball
+Info (12021): Found 2 design units, including 1 entities, in source file BallCounter.vhd
+    Info (12022): Found design unit 1: BallCounter-funcionamento File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 14
+    Info (12023): Found entity 1: BallCounter File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file StrikeCounter.vhd
+    Info (12022): Found design unit 1: StrikeCounter-funcionamento File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd Line: 14
+    Info (12023): Found entity 1: StrikeCounter File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file OutCounter.vhd
+    Info (12022): Found design unit 1: OutCounter-funcionamento File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd Line: 14
+    Info (12023): Found entity 1: OutCounter File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file SeletorHEX.bdf
+    Info (12023): Found entity 1: SeletorHEX
+Info (12021): Found 2 design units, including 1 entities, in source file SetCounter.vhd
+    Info (12022): Found design unit 1: SetCounter-funcionamento File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/SetCounter.vhd Line: 13
+    Info (12023): Found entity 1: SetCounter File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/SetCounter.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file PlacarVolei.bdf
+    Info (12023): Found entity 1: PlacarVolei
+Info (12021): Found 1 design units, including 1 entities, in source file PontoVolei.bdf
+    Info (12023): Found entity 1: PontoVolei
+Info (12021): Found 1 design units, including 1 entities, in source file Tempo_Desafio.bdf
+    Info (12023): Found entity 1: Tempo_Desafio
+Info (12021): Found 2 design units, including 1 entities, in source file Tempo.vhd
+    Info (12022): Found design unit 1: Tempo-funcionamento File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Tempo.vhd Line: 13
+    Info (12023): Found entity 1: Tempo File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Tempo.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file Desafio.vhd
+    Info (12022): Found design unit 1: Desafio-funcionamento File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Desafio.vhd Line: 14
+    Info (12023): Found entity 1: Desafio File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Desafio.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file MUX8x4.bdf
+    Info (12023): Found entity 1: MUX8x4
+Info (12021): Found 2 design units, including 1 entities, in source file Chaves.vhd
+    Info (12022): Found design unit 1: Chaves-gate_level File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Chaves.vhd Line: 11
+    Info (12023): Found entity 1: Chaves File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Chaves.vhd Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file LABFinal.bdf
+    Info (12023): Found entity 1: LABFinal
+Info (12127): Elaborating entity "LABFinal" for the top level hierarchy
+Info (12128): Elaborating entity "ConversorHexaDecimal" for hierarchy "ConversorHexaDecimal:inst4"
+Info (12128): Elaborating entity "MUX8x4" for hierarchy "MUX8x4:inst2"
+Info (12128): Elaborating entity "Seletora" for hierarchy "MUX8x4:inst2|Seletora:inst"
+Info (12128): Elaborating entity "PlacarVolei" for hierarchy "PlacarVolei:inst"
+Info (12128): Elaborating entity "PontoVolei" for hierarchy "PlacarVolei:inst|PontoVolei:inst3"
+Warning (275080): Converted elements in bus name "d" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "d[3..0]" to "d3..0"
+    Warning (275081): Converted element name(s) from "d[3]" to "d3"
+    Warning (275081): Converted element name(s) from "d[2]" to "d2"
+    Warning (275081): Converted element name(s) from "d[1]" to "d1"
+    Warning (275081): Converted element name(s) from "d[0]" to "d0"
+Info (12128): Elaborating entity "Contadorx99" for hierarchy "PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst"
+Warning (10492): VHDL Process Statement warning at Contadorx99.vhd(24): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at Contadorx99.vhd(33): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 33
+Info (12128): Elaborating entity "Chaves" for hierarchy "PlacarVolei:inst|Chaves:inst11"
+Info (12128): Elaborating entity "Tempo_Desafio" for hierarchy "PlacarVolei:inst|Tempo_Desafio:inst5"
+Warning (275080): Converted elements in bus name "D" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "D[3]" to "D3"
+    Warning (275081): Converted element name(s) from "D[2]" to "D2"
+    Warning (275081): Converted element name(s) from "D[1]" to "D1"
+    Warning (275081): Converted element name(s) from "D[0]" to "D0"
+    Warning (275081): Converted element name(s) from "D[3..0]" to "D3..0"
+Warning (275080): Converted elements in bus name "T" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "T[3..0]" to "T3..0"
+    Warning (275081): Converted element name(s) from "T[0]" to "T0"
+    Warning (275081): Converted element name(s) from "T[1]" to "T1"
+    Warning (275081): Converted element name(s) from "T[2]" to "T2"
+    Warning (275081): Converted element name(s) from "T[3]" to "T3"
+Info (12128): Elaborating entity "Tempo" for hierarchy "PlacarVolei:inst|Tempo_Desafio:inst5|Tempo:inst"
+Info (12128): Elaborating entity "Desafio" for hierarchy "PlacarVolei:inst|Tempo_Desafio:inst5|Desafio:inst1"
+Info (12128): Elaborating entity "Contador06" for hierarchy "PlacarVolei:inst|Contador06:inst2"
+Info (12128): Elaborating entity "06D3" for hierarchy "PlacarVolei:inst|Contador06:inst2|06D3:inst8"
+Info (12128): Elaborating entity "06D2" for hierarchy "PlacarVolei:inst|Contador06:inst2|06D2:inst7"
+Info (12128): Elaborating entity "06D0" for hierarchy "PlacarVolei:inst|Contador06:inst2|06D0:inst"
+Info (12128): Elaborating entity "06D1" for hierarchy "PlacarVolei:inst|Contador06:inst2|06D1:inst5"
+Info (12128): Elaborating entity "SetCounter" for hierarchy "PlacarVolei:inst|SetCounter:inst1"
+Info (12128): Elaborating entity "Alternadora" for hierarchy "Alternadora:inst26"
+Info (12128): Elaborating entity "PlacarBaseball" for hierarchy "PlacarBaseball:inst1"
+Info (12128): Elaborating entity "Contador09" for hierarchy "PlacarBaseball:inst1|Contador09:inst2"
+Info (12128): Elaborating entity "OutCounter" for hierarchy "PlacarBaseball:inst1|OutCounter:inst8"
+Warning (10631): VHDL Process Statement warning at OutCounter.vhd(38): inferring latch(es) for signal or variable "L2", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at OutCounter.vhd(38): inferring latch(es) for signal or variable "L1", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at OutCounter.vhd(38): inferring latch(es) for signal or variable "en_switch_team", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd Line: 38
+Info (10041): Inferred latch for "en_switch_team" at OutCounter.vhd(38) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd Line: 38
+Info (10041): Inferred latch for "L1" at OutCounter.vhd(38) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd Line: 38
+Info (10041): Inferred latch for "L2" at OutCounter.vhd(38) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/OutCounter.vhd Line: 38
+Info (12128): Elaborating entity "StrikeCounter" for hierarchy "PlacarBaseball:inst1|StrikeCounter:inst7"
+Warning (10631): VHDL Process Statement warning at StrikeCounter.vhd(38): inferring latch(es) for signal or variable "L4", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at StrikeCounter.vhd(38): inferring latch(es) for signal or variable "L5", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at StrikeCounter.vhd(38): inferring latch(es) for signal or variable "en_strike", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd Line: 38
+Info (10041): Inferred latch for "en_strike" at StrikeCounter.vhd(38) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd Line: 38
+Info (10041): Inferred latch for "L5" at StrikeCounter.vhd(38) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd Line: 38
+Info (10041): Inferred latch for "L4" at StrikeCounter.vhd(38) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/StrikeCounter.vhd Line: 38
+Info (12128): Elaborating entity "BallCounter" for hierarchy "PlacarBaseball:inst1|BallCounter:inst6"
+Warning (10631): VHDL Process Statement warning at BallCounter.vhd(40): inferring latch(es) for signal or variable "L8", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 40
+Warning (10631): VHDL Process Statement warning at BallCounter.vhd(40): inferring latch(es) for signal or variable "L7", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 40
+Warning (10631): VHDL Process Statement warning at BallCounter.vhd(40): inferring latch(es) for signal or variable "en_walk", which holds its previous value in one or more paths through the process File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 40
+Info (10041): Inferred latch for "en_walk" at BallCounter.vhd(40) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 40
+Info (10041): Inferred latch for "L7" at BallCounter.vhd(40) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 40
+Info (10041): Inferred latch for "L8" at BallCounter.vhd(40) File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 40
+Info (12128): Elaborating entity "Pontos" for hierarchy "PlacarBaseball:inst1|Pontos:inst"
+Warning (275080): Converted elements in bus name "D" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "D[3]" to "D3"
+    Warning (275081): Converted element name(s) from "D[2]" to "D2"
+    Warning (275081): Converted element name(s) from "D[1]" to "D1"
+    Warning (275081): Converted element name(s) from "D[0]" to "D0"
+    Warning (275081): Converted element name(s) from "D[3..0]" to "D3..0"
+Warning (275080): Converted elements in bus name "U" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "U[3..0]" to "U3..0"
+    Warning (275081): Converted element name(s) from "U[0]" to "U0"
+    Warning (275081): Converted element name(s) from "U[1]" to "U1"
+    Warning (275081): Converted element name(s) from "U[2]" to "U2"
+    Warning (275081): Converted element name(s) from "U[3]" to "U3"
+Warning (13012): Latch PlacarBaseball:inst1|BallCounter:inst6|en_walk has unsafe behavior File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal PlacarBaseball:inst1|BallCounter:inst6|estado.s4 File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/BallCounter.vhd Line: 16
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst|contagem0[0] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst|contagem0[0] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst|contagem1[0] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst|contagem1[0] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst|contagem0[0] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst|contagem0[0] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst|contagem1[0] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst|contagem1[0] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst|contagem0[31] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarBaseball:inst1|Pontos:inst1|Contadorx99:inst|contagem1[31] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst|contagem0[31] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarVolei:inst|PontoVolei:inst3|Contadorx99:inst|contagem1[31] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst|contagem0[31] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarBaseball:inst1|Pontos:inst|Contadorx99:inst|contagem1[31] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst|contagem0[31] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register PlacarVolei:inst|PontoVolei:inst4|Contadorx99:inst|contagem1[31] will power up to Low File: /home/aldeena/Documentos/UTFPR/ProjetosDigitais/LABFinal/Contadorx99.vhd Line: 21
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1279 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 45 output pins
+    Info (21061): Implemented 1224 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 1017 megabytes
+    Info: Processing ended: Thu Dec 15 13:42:31 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:37
+
+

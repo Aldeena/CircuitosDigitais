@@ -1,0 +1,16 @@
+EMORIA + PISO + DETECTOR SEQUENCIA
+
+ETAPA 01
+Considere os módulos Timing_ref, PISO e Detector de sequência criados em laboratórios anteriores. 
+Crie um contador para ser o GERADOR DE ENDEREÇOS SEQUENCIAS para a memória
+Insira em seu projeto uma memória ROM de 256 endereços com registros de 8 bits por endereço (assista o vídeo em anexo). NOTA: NO VÍDEO UTILIZEI "( .. )" AO INVÉS DE "[ .. ]". cONSIDERE CORRETO O USO DE [ e ]!!!!
+
+
+Utilizando inicialmente um arquivo de dados do tipo .hex (e.g., ROM_256_8.HEX) fornecido, deixe o contador de 00 a FF ACIONADO POR UM CLOCK QUE PERMITA A VISUALIZAÇÃO ADEQUADA DO FUNCIONAMENTO DE TODO O CIRCUITO INCLUINDO A TRANSIÇÃO DE ESTADOS DO MÓDULO DETECTOR DE SEQUENCIA o qual deve ter um clock com 8 eventos a cada clock do contador de endereçamento.
+
+O esquemático do circuito foi apresentado e explicado em sala de aula. É FUNDAMENTAL DOIS DISPLAYS PARA APRESENTAR O ENDEREÇO CORRENTE, DOIS DISPLAYS PARA APRESENTAR O DADO NA MEMÓRIA PARA TAL ENDEREÇO E UM DISPLAY PARA APRESENTAR A VARIAÇÃO DE ESTADOS DO DETECTOR DE SEQUENCIA.
+
+IMPORTANTE:  A memória tem TODAS as combinações possíveis para um número de 8 bits. Isto significa que o seu circuito deverá encontrar um a sequencia de 7 bits PELO MENOS 4 VEZES ao se fazer todo o screening dos dados de todos os endereços da memória. Desta forma, quando a sequencia for encontrada um LED deve ser acionado e todo o circuito deve PAUSAR  no estado em que se encontra através da inibição do clock para quaisquer elementos do circuito. Ao ser pressionado um push buttom da placa o circuito deve ser capaz de continuar a análise a partir do endereço de memória que havia parado.
+
+
+é necessário, APÓS APRESENTAÇÃO DO FUNCIONAMENTO DO CIRCUITO PARA O PROFESSOR, fazer o UPLOAD de um relatório de projeto (30% da nota), do diretório de projeto compactado  e de foto do visto do professor.

@@ -1,0 +1,213 @@
+|Somador4Bits
+S0 <= SomadorCompleto:inst.S
+A0 => SomadorCompleto:inst.A
+B0 => SomadorCompleto:inst.B
+CIN => SomadorCompleto:inst.CI
+S1 <= SomadorCompleto:inst1.S
+A1 => SomadorCompleto:inst1.A
+B1 => SomadorCompleto:inst1.B
+S3 <= SomadorCompleto:inst3.S
+A3 => SomadorCompleto:inst3.A
+B3 => SomadorCompleto:inst3.B
+A2 => SomadorCompleto:inst2.A
+B2 => SomadorCompleto:inst2.B
+S2 <= SomadorCompleto:inst2.S
+COUT <= SomadorCompleto:inst3.CO
+
+
+|Somador4Bits|SomadorCompleto:inst
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|Somador4Bits|SomadorCompleto:inst|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst1
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|Somador4Bits|SomadorCompleto:inst1|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst1|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst1|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst1|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst1|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst1|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst3
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|Somador4Bits|SomadorCompleto:inst3|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst3|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst3|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst3|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst3|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst3|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst2
+S <= 7486:inst5.1
+A => 7486:inst4.2
+A => 7408:inst.2
+A => 7432:inst2.2
+B => 7486:inst4.3
+B => 7408:inst.3
+B => 7432:inst2.3
+CI => 7486:inst5.3
+CI => 7408:inst1.3
+CO <= 7432:inst3.1
+
+
+|Somador4Bits|SomadorCompleto:inst2|7486:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst2|7486:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst2|7432:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst2|7408:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst2|7408:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Somador4Bits|SomadorCompleto:inst2|7432:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+

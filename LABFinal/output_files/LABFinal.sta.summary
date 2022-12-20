@@ -1,0 +1,677 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|inst3'
+Slack : -14.306
+TNS   : -1429.786
+
+Type  : Slow 1200mV 85C Model Setup 'PB0'
+Slack : -12.735
+TNS   : -1804.211
+
+Type  : Slow 1200mV 85C Model Setup 'PB1'
+Slack : -11.223
+TNS   : -581.785
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : -7.279
+TNS   : -8.506
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : -5.591
+TNS   : -10.070
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : -4.340
+TNS   : -5.463
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : -3.525
+TNS   : -3.525
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : -2.569
+TNS   : -3.452
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -1.626
+TNS   : -2.754
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : -1.175
+TNS   : -2.199
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : -0.568
+TNS   : -0.568
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : -0.511
+TNS   : -0.511
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : -0.464
+TNS   : -0.464
+
+Type  : Slow 1200mV 85C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PB0'
+Slack : -1.244
+TNS   : -57.226
+
+Type  : Slow 1200mV 85C Model Hold 'PB1'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|inst3'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : 0.542
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : 0.592
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : 0.612
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : 0.636
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : 0.687
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : 0.718
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : 0.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : 1.085
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : 3.180
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'PB1'
+Slack : -6.393
+TNS   : -23.031
+
+Type  : Slow 1200mV 85C Model Recovery 'PB0'
+Slack : -5.731
+TNS   : -16.255
+
+Type  : Slow 1200mV 85C Model Recovery 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -4.351
+TNS   : -9.799
+
+Type  : Slow 1200mV 85C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : -3.209
+TNS   : -3.209
+
+Type  : Slow 1200mV 85C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : -1.838
+TNS   : -1.838
+
+Type  : Slow 1200mV 85C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : -1.737
+TNS   : -1.737
+
+Type  : Slow 1200mV 85C Model Recovery 'PlacarBaseball:inst1|inst3'
+Slack : -1.434
+TNS   : -1.434
+
+Type  : Slow 1200mV 85C Model Removal 'PlacarBaseball:inst1|inst3'
+Slack : 0.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 1.131
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : 1.196
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : 1.685
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : 2.059
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PB1'
+Slack : 2.712
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PB0'
+Slack : 2.809
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PB0'
+Slack : -3.000
+TNS   : -300.436
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PB1'
+Slack : -3.000
+TNS   : -118.046
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|inst3'
+Slack : -1.403
+TNS   : -180.987
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|inst3'
+Slack : -12.994
+TNS   : -1302.200
+
+Type  : Slow 1200mV 0C Model Setup 'PB0'
+Slack : -11.494
+TNS   : -1628.810
+
+Type  : Slow 1200mV 0C Model Setup 'PB1'
+Slack : -10.125
+TNS   : -524.885
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : -6.675
+TNS   : -7.711
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : -5.146
+TNS   : -9.267
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : -3.997
+TNS   : -4.960
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : -3.229
+TNS   : -3.229
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : -2.265
+TNS   : -3.017
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -1.424
+TNS   : -2.242
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : -0.985
+TNS   : -1.866
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : -0.461
+TNS   : -0.461
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : -0.416
+TNS   : -0.416
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : -0.400
+TNS   : -0.400
+
+Type  : Slow 1200mV 0C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PB0'
+Slack : -1.208
+TNS   : -54.030
+
+Type  : Slow 1200mV 0C Model Hold 'PB1'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|inst3'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : 0.495
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : 0.557
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : 0.561
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : 0.572
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : 0.647
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : 0.664
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : 0.704
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : 1.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : 2.996
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'PB1'
+Slack : -5.971
+TNS   : -21.647
+
+Type  : Slow 1200mV 0C Model Recovery 'PB0'
+Slack : -5.337
+TNS   : -15.252
+
+Type  : Slow 1200mV 0C Model Recovery 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -3.903
+TNS   : -8.691
+
+Type  : Slow 1200mV 0C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : -2.915
+TNS   : -2.915
+
+Type  : Slow 1200mV 0C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : -1.575
+TNS   : -1.575
+
+Type  : Slow 1200mV 0C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : -1.512
+TNS   : -1.512
+
+Type  : Slow 1200mV 0C Model Recovery 'PlacarBaseball:inst1|inst3'
+Slack : -1.289
+TNS   : -1.289
+
+Type  : Slow 1200mV 0C Model Removal 'PlacarBaseball:inst1|inst3'
+Slack : 0.679
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 1.046
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : 1.083
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : 1.519
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : 1.898
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PB1'
+Slack : 2.247
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PB0'
+Slack : 2.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PB0'
+Slack : -3.000
+TNS   : -300.436
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PB1'
+Slack : -3.000
+TNS   : -118.046
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|inst3'
+Slack : -1.403
+TNS   : -180.987
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|inst3'
+Slack : -5.474
+TNS   : -565.473
+
+Type  : Fast 1200mV 0C Model Setup 'PB0'
+Slack : -4.586
+TNS   : -626.270
+
+Type  : Fast 1200mV 0C Model Setup 'PB1'
+Slack : -3.997
+TNS   : -198.695
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : -3.321
+TNS   : -3.614
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : -2.386
+TNS   : -4.296
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : -1.862
+TNS   : -2.113
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : -1.531
+TNS   : -1.531
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : -0.564
+TNS   : -0.564
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -0.391
+TNS   : -0.441
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : -0.285
+TNS   : -0.285
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : 0.083
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PB0'
+Slack : -0.757
+TNS   : -31.682
+
+Type  : Fast 1200mV 0C Model Hold 'PB1'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|inst3'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : 1.957
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'PB1'
+Slack : -2.485
+TNS   : -8.021
+
+Type  : Fast 1200mV 0C Model Recovery 'PB0'
+Slack : -2.211
+TNS   : -5.394
+
+Type  : Fast 1200mV 0C Model Recovery 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -1.925
+TNS   : -3.824
+
+Type  : Fast 1200mV 0C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : -1.189
+TNS   : -1.189
+
+Type  : Fast 1200mV 0C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : -0.252
+TNS   : -0.252
+
+Type  : Fast 1200mV 0C Model Recovery 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : -0.204
+TNS   : -0.204
+
+Type  : Fast 1200mV 0C Model Recovery 'PlacarBaseball:inst1|inst3'
+Slack : -0.035
+TNS   : -0.035
+
+Type  : Fast 1200mV 0C Model Removal 'PlacarBaseball:inst1|inst3'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : 0.518
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : 0.803
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PB1'
+Slack : 1.045
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PB0'
+Slack : 1.102
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PB0'
+Slack : -3.000
+TNS   : -220.632
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PB1'
+Slack : -3.000
+TNS   : -85.491
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|inst3'
+Slack : -1.000
+TNS   : -129.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|en_strike'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|Contador09:inst2|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|en_switch_team'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|estado.s3'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s1'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|BallCounter:inst6|estado.s1'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|OutCounter:inst8|estado.s1'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|BallCounter:inst6|estado.s0'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PlacarBaseball:inst1|StrikeCounter:inst7|estado.s3'
+Slack : 0.450
+TNS   : 0.000
+
+------------------------------------------------------------

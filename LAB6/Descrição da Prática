@@ -1,0 +1,7 @@
+LAB06 - DETECTOR DE SEQUENCIA
+
+Utilizando o seu numero de R.A. (e.g. 2065384) selecione os DOIS ALGARISMOS MENOS SIGNIFICATIVOS (i.e., 84 neste exemplo) e suponha que os mesmos já são números na base hexadecimal, ou seja, 84 na base hexa.  Faça a conversão para a base binária (neste exemplo seria 8 = 1000 e 4=0100) para formar uma string de dígitos binários (i.e., neste caso 1000_0100). 
+
+Projete, implemente e simule um detector de sequencia de 7 bits para ESTA string considerando os 7 bits mais ou menos significativos somente. Faça somente um detector, ou seja, escolha se fará para os bits mais ou para os bits menos significativos da string.
+
+Após a simulação faça o envio dos arquivos (diretório compactado e a simulação do seu detector de sequencia utilizando o sinal de entrada fornecido pelo professor).

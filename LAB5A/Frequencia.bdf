@@ -1,0 +1,210 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -184 216 -16 232)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Seletora" (rect 5 0 47 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -88 112 80 128)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Clock" (rect 5 0 33 13)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 736 184 912 200)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Saida" (rect 90 0 119 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 608 160 704 256)
+	(text "Seletora" (rect 5 0 53 15)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 79 26 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
+		(text "X" (rect 21 27 29 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "SEL" (rect 0 0 22 15)(font "Intel Clear" (font_size 8)))
+		(text "SEL" (rect 21 43 43 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Y" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
+		(text "Y" (rect 21 59 29 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "OUT" (rect 0 0 28 15)(font "Intel Clear" (font_size 8)))
+		(text "OUT" (rect 47 27 75 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 200 256 344 336)
+	(text "Timing_Reference" (rect 5 0 95 11)(font "Arial" ))
+	(text "inst2" (rect 8 64 31 75)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 11)(font "Arial" ))
+		(text "clk" (rect 21 27 35 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "clk_xHz" (rect 0 0 38 11)(font "Arial" ))
+		(text "clk_xHz" (rect 91 27 123 38)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 64))
+	)
+)
+(symbol
+	(rect 208 80 352 160)
+	(text "Timing_Reference1KHz" (rect 5 0 121 11)(font "Arial" ))
+	(text "inst3" (rect 8 64 31 75)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 11)(font "Arial" ))
+		(text "clk" (rect 21 27 35 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "clk_xHz" (rect 0 0 38 11)(font "Arial" ))
+		(text "clk_xHz" (rect 91 27 123 38)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 64))
+	)
+)
+(connector
+	(pt 208 112)
+	(pt 168 112)
+)
+(connector
+	(pt 168 288)
+	(pt 200 288)
+)
+(connector
+	(pt 80 120)
+	(pt 168 120)
+)
+(connector
+	(pt 168 112)
+	(pt 168 120)
+)
+(connector
+	(pt 168 120)
+	(pt 168 288)
+)
+(connector
+	(pt -16 224)
+	(pt 480 224)
+)
+(connector
+	(pt 480 224)
+	(pt 480 208)
+)
+(connector
+	(pt 608 208)
+	(pt 480 208)
+)
+(connector
+	(pt 608 192)
+	(pt 480 192)
+)
+(connector
+	(pt 480 192)
+	(pt 480 112)
+)
+(connector
+	(pt 480 112)
+	(pt 352 112)
+)
+(connector
+	(pt 608 224)
+	(pt 504 224)
+)
+(connector
+	(pt 504 288)
+	(pt 504 224)
+)
+(connector
+	(pt 504 288)
+	(pt 344 288)
+)
+(connector
+	(pt 736 192)
+	(pt 704 192)
+)
+(junction (pt 168 120))

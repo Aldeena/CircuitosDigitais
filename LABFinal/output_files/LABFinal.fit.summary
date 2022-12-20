@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Dec 15 13:42:49 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LABFinal
+Top-level Entity Name : LABFinal
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 1,224 / 49,760 ( 2 % )
+    Total combinational functions : 1,208 / 49,760 ( 2 % )
+    Dedicated logic registers : 303 / 49,760 ( < 1 % )
+Total registers : 303
+Total pins : 55 / 360 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

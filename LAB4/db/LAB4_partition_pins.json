@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hex0a",
+					"strict" : false
+				},
+				{
+					"name" : "hex0b",
+					"strict" : false
+				},
+				{
+					"name" : "hex0c",
+					"strict" : false
+				},
+				{
+					"name" : "hex0d",
+					"strict" : false
+				},
+				{
+					"name" : "hex0e",
+					"strict" : false
+				},
+				{
+					"name" : "hex0f",
+					"strict" : false
+				},
+				{
+					"name" : "hex0g",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "InternalCLK50MHz",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

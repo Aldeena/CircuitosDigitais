@@ -1,0 +1,119 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed.all;
+ENTITY StateMachine09 IS
+	PORT (
+		clk	:IN STD_LOGIC;
+		reset_n	:IN STD_LOGIC;
+		contagem	:OUT STD_LOGIC_VECTOR(3 downto 0);
+		pulso	:OUT  STD_LOGIC;
+		desce	:OUT STD_LOGIC );
+END StateMachine09;
+
+
+ARCHITECTURE funcionamento OF StateMachine09 IS
+	TYPE STATE_TYPE IS (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9);
+	SIGNAL estado	:STATE_TYPE;
+
+	
+BEGIN
+	PROCESS(clk,reset_n)
+	BEGIN
+		IF reset_n = '0' THEN
+			estado <= s0;
+		ELSIF(clk'EVENT AND clk = '1') THEN -- rising edge
+			CASE estado IS
+				WHEN s0=>
+					IF desce = '1' THEN
+						estado <= s9; -- s0>s9 0>9
+					ELSE
+						estado <= s1; -- s0>s1 0>1
+					END IF;
+				WHEN s1=>
+					IF desce = '1' THEN
+						estado <= s0; -- s1>s0 1>0
+					ELSE
+						estado <= s2; -- s1>s2 1>2
+					END IF;
+				WHEN s2=>
+					IF desce = '1' THEN
+						estado <= s1; -- s2>s1 2>1
+					ELSE
+						estado <= s3; -- s2>s3 2>3
+					END IF;
+				WHEN s3=>
+					IF desce = '1' THEN
+						estado <= s2; -- s3>s2 3>2
+					ELSE
+						estado <= s4; -- s3>s4 3>4
+					END IF;
+				WHEN s4=>
+					IF desce = '1' THEN
+						estado <= s3; -- s4>s3 4>3
+					ELSE
+						estado <= s5; -- s4>s5 4>5
+					END IF;
+				WHEN s5=>
+					IF desce = '1' THEN
+						estado <= s4; -- s5>s4 5>4
+					ELSE
+						estado <= s6; -- s5>s6 5>6
+					END IF;
+				WHEN s6=>
+					IF desce = '1' THEN
+						estado <= s5; -- s6>s5 6>5
+					ELSE
+						estado <= s7; -- s6>s7 6>7
+					END IF;
+				WHEN s7=>
+					IF desce = '1' THEN
+						estado <= s6; -- s7>s6 7>6
+					ELSE
+						estado <= s8; -- s7>s8 7>8
+					END IF;
+				WHEN s8=>
+					IF desce = '1' THEN
+						estado <= s7; -- s8>s7 8>7
+					ELSE
+						estado <= s9; -- s8>s9 8>9
+					END IF;
+				WHEN s9=>
+					IF desce = '1' THEN
+						estado <= s8; -- s9>s8 9>8
+					ELSE
+						estado <= s0; -- s9>s0 9>0
+					END IF;
+			END CASE;
+		END IF;
+	END PROCESS;
+	
+	
+	
+	PROCESS (estado)
+	BEGIN
+		CASE estado IS
+			WHEN s0=>
+				contagem <= "0000";
+			WHEN S1=>
+				contagem <= "0001";
+			WHEN s2=>
+				contagem <= "0010";
+			WHEN s3=>
+				contagem <= "0011";
+			WHEN s4=>
+				contagem <= "0100";
+			WHEN s5=>
+				contagem <= "0101";
+			WHEN s6=>
+				contagem <= "0110";
+			WHEN s7=>
+				contagem <= "0111";
+			WHEN s8=>
+				contagem <= "1000";
+			WHEN s9=>
+				contagem <= "1001";				
+		END CASE;
+	END PROCESS;
+	
+END funcionamento;
